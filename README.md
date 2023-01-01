@@ -1,7 +1,5 @@
 # React: Favorite Movie Directory
 
-<span style="font-size: 16px;">Complete a partially completed React movie directory application.</span> Certain core React functionalities have already been implemented. Complete the application as shown below in order to pass all the unit tests.
-
 ![](https://hrcdn.net/s3_pub/istreet-assets/QP-nMkLcgVGyNqz4vKZCtw/favorite-movie-directory.gif)
 
 The application has 3 components:
@@ -10,7 +8,7 @@ The application has 3 components:
 *   The Movieslist component, which displays the movies data.
 *   The Search component, which allows the user to filter through existing movies.
 
-Each movie object in the Movielist should have the following properties:
+Each movie object in the Movielist has the following properties:
 
 *   _name_: The name of the movie [STRING]
 *   _rating_: The rating of the movie in the range of 0 to 100 [NUMBER]
@@ -26,17 +24,15 @@ The application has the following functionalities:
     *   {movie name}
     *   Ratings: {ratings}/100
     *   {duration} Hrs
-*   The following functionality should be implemented when the user clicks on the Add Movie button:
-    *   If the duration format entered by the user is invalid, show the alert error message with the text 'Please specify the time in hours or minutes (e.g. 2.5h or 150m)'. This error message should be cleared once the user starts typing into any of the input fields.
-    *   If all the input fields are filled with a valid value, a new movie should be added to the list.
-    *   If the duration is entered in minutes, it must be converted to hours. For example, 90m should be converted and displayed as '1.5 Hrs'.
+*   The following functionality has been implemented when the user clicks on the Add Movie button:
+    *   If the duration format entered by the user is invalid, shows the alert error message with the text 'Please specify the time in hours or minutes (e.g. 2.5h or 150m)'. This error message gets cleared once the user starts typing into any of the input fields.
+    *   If all the input fields are filled with a valid value, a new movie gets added to the list.
+    *   If the duration is entered in minutes, it gets converted to hours. For example, 90m will be converted and displayed as '1.5 Hrs'.
 *   The Search component allows the user to filter through existing movies in the directory by the beginning characters.
-    *   It requires the user to input at least 2 characters before the search happens.
+    *   It requires the user to input at least 1 characters before the search happens.
     *   If the search finds no matches, the message 'No Results Found' is displayed instead of the list.
-*   Initially, the Movieslist component and the 'No Results Found' message are not visible.
+*   Initially, the Movieslist component is not visible.
 
-
-Please note that component has the above data-testid attributes for test cases and certain classes and ids for rendering purposes. It is advised not to change them.
 
 ## Environment 
 
@@ -44,10 +40,6 @@ Please note that component has the above data-testid attributes for test cases a
 - Node Version: 14(LTS)
 - Default Port: 8000
 
-## Project Specifications 
-
-**Read-Only Files**
-- `src/App.test.js`
 
 **Commands**
 - run: 
@@ -57,8 +49,4 @@ npm start
 - install: 
 ```bash
 npm install
-```
-- test: 
-```bash
-npm test
 ```
